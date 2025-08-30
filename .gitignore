@@ -3,10 +3,12 @@
 .eclipse/
 .classpath
 .project
+*.class
 
 # Build Files
 target/
 out/
+build
 
 # System Files
 .DS_Store
@@ -19,7 +21,7 @@ node_modules/
 
 # Environment Files
 .env
-application.properties placeholder=
+application.properties
 application.yml placeholder=
 application.properties.example
 
