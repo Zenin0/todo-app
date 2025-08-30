@@ -1,10 +1,8 @@
 package com.zenin.todoapp.exception.user;
 
 import com.zenin.todoapp.exception.BaseApplicationException;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
+import lombok.*;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;
 
 @EqualsAndHashCode(callSuper = true)
@@ -19,4 +17,9 @@ public class UserException extends BaseApplicationException {
 
     HttpStatusCode httpStatusCode;
 
+    public UserException(String userNotFound, HttpStatus httpStatus) {
+        this.message = userNotFound;
+        this.httpStatusCode = httpStatus;
+        this.exception = null;
+    }
 }

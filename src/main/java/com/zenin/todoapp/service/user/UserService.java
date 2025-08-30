@@ -43,4 +43,8 @@ public class UserService {
             throw new UserException(e.getMessage(), e, HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
+
+    public Optional<User> findUserByUsername(String username) {
+        return userRepository.findUserByUsername(username);
+    }
 }

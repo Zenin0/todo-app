@@ -1,17 +1,20 @@
 package com.zenin.todoapp.controller.user;
 
+import com.zenin.todoapp.controller.BaseController;
 import com.zenin.todoapp.exception.BaseApplicationException;
 import com.zenin.todoapp.model.user.User;
 import com.zenin.todoapp.service.user.UserService;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/user")
-public class UserController {
+@RequestMapping(BaseController.BASE_URL + "/user")
+public class UserController extends BaseController {
 
     private final UserService userService;
 
+
     public UserController(UserService userService) {
+        super(userService);
         this.userService = userService;
     }
 
