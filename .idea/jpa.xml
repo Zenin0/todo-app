@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PersistenceUnitSettings">
+    <persistence-units>
+      <persistence-unit moduleName="todo-app.main" name="todo-app.main" framework="JPA" ormUnit="todo-app.main:todo-app.main" defaultDataSourceId="5fedeede-735d-48a4-a222-e6446e3b9592" />
+    </persistence-units>
+  </component>
+</project>
