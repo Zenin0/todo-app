@@ -2,7 +2,7 @@ package com.zenin.todoapp.service.user;
 
 import com.zenin.todoapp.exception.BaseApplicationException;
 import com.zenin.todoapp.exception.user.UserException;
-import com.zenin.todoapp.model.User;
+import com.zenin.todoapp.model.user.User;
 import com.zenin.todoapp.repository.UserRepository;
 import com.zenin.todoapp.utils.password.PasswordUtils;
 import org.springframework.dao.DataIntegrityViolationException;

@@ -1,7 +1,7 @@
 package com.zenin.todoapp.controller.user;
 
 import com.zenin.todoapp.exception.BaseApplicationException;
-import com.zenin.todoapp.model.User;
+import com.zenin.todoapp.model.user.User;
 import com.zenin.todoapp.service.user.UserService;
 import org.springframework.web.bind.annotation.*;
 
@@ -20,7 +20,7 @@ public class UserController {
         return userService.findById(id);
     }
 
-    @PostMapping()
+    @PostMapping
     public User createUser(@RequestBody User user) throws BaseApplicationException {
         return userService.createUser(user);
     }

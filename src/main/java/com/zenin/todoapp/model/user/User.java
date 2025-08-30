@@ -1,4 +1,4 @@
-package com.zenin.todoapp.model;
+package com.zenin.todoapp.model.user;
 
 import jakarta.persistence.*;
 import lombok.Data;
